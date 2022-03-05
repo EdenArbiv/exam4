@@ -1,0 +1,13 @@
+<div class="home">
+    <h1><b>Tasks:</b></h1>
+    <mat-card class="card">
+        <h4><b>Customer</b></h4>
+        <h4><b>Task</b></h4>
+        <h4><b>Date</b></h4>
+        <h4><b>Done</b></h4>
+        <h4><b>Delete</b></h4>
+     
+    </mat-card>
+    <app-task *ngFor="let task of _data.tasksArr" [task]="task">
+    </app-task>
+</div>

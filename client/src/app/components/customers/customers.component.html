@@ -1,0 +1,12 @@
+<div class="customerslist">
+  <h1>Customers:</h1>
+  <mat-list>
+    <mat-list-item class="row" *ngFor="let customer of _data.CustomersArr">
+      <h4>Name: {{ customer.name }}</h4>
+      <h4>Job: {{ customer.job }}</h4>
+      <h4>Phone: {{ customer.phone }}</h4>
+      <h4>Email: {{ customer.email }}</h4>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</div>

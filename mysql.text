@@ -1,0 +1,29 @@
+-- create database customertasks ;
+-- use customertasks; 
+
+-- create table customers(
+-- id int auto_increment,
+-- name varchar(50),
+-- job varchar(50),
+-- phone varchar(50),
+-- email varchar(50),
+-- primary key(id)
+-- );
+
+-- create table tasks(
+-- id int auto_increment,
+-- description text(500),
+-- date datetime default now(),
+-- customer_id int,
+-- done boolean default false,
+-- primary key(id),
+-- foreign key(customer_id) references customers(id)
+-- );
+
+-- insert into customers(name , job, phone ,email)
+-- values("Daniel","Full Stack Developer", "0534447564", "daniel1@gmail.com"),
+-- ("Dina","Graphic designer", "0537778080", "Dina123@gmail.com"),
+-- ("Adi","Software Engineer", "0509344441", "adi333@gmail.com");
+
+-- insert into tasks(description, customer_id)
+-- values("design a website", 2);

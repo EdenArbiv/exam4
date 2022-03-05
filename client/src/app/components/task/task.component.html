@@ -1,0 +1,10 @@
+<mat-card class="card">
+    <h4 class="data">{{task.customer}}-{{task.job}}</h4>
+    <h4>{{task.description}}</h4>
+    <h4>{{task.date | date: 'M/d/yy, hh:mm ' }}</h4>
+    <mat-checkbox [checked]="task.done" (click)="_data.doneTask(task.id, {done:task.done})" class="example-margin"></mat-checkbox>
+    <button (click)="_data.delTask(task.id)" class="btn1" mat-icon-button >
+        <mat-icon>delete_forever</mat-icon>
+    </button>
+   
+</mat-card>

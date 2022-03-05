@@ -1,0 +1,15 @@
+<p>
+    <mat-toolbar class="tool">
+    <span>Customers Tasks</span>
+    <span class="example-spacer"></span>
+    <button class="home" mat-mini-fab aria-label="Example icon button with a home icon">
+        <mat-icon (click)="router.navigate(['/home'])">home</mat-icon>
+    </button>
+    <button (click)="router.navigate(['/addtask']);" class="add" mat-mini-fab aria-label="Example icon button with a heart icon">
+        <mat-icon color="black">queue</mat-icon>
+    </button>
+    <button (click)="router.navigate(['/customers'])" class="add" mat-mini-fab aria-label="Example icon button with a heart icon">
+        <mat-icon color="black">recent_actors</mat-icon>
+    </button>
+  </mat-toolbar>
+  </p>

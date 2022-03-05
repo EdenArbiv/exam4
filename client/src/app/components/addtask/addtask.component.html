@@ -1,0 +1,19 @@
+<div class="form">
+    <form [formGroup]="form">
+    <h2>Add New Task:</h2>
+    <mat-form-field appearance="fill">
+        <mat-label>Select</mat-label>
+        <mat-select formControlName="customer_id">
+          <mat-option value="0" disabled >Please select Customer</mat-option>
+          <mat-option class="option" value={{customer.id}} *ngFor="let customer of _data.CustomersArr">{{customer.name+"- "+customer.job}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Add Task here</mat-label>
+        <textarea matInput formControlName="description" ></textarea>
+    </mat-form-field>
+    <br>
+    <button (click)="_data.newTask(form.value)" mat-raised-button>Add Task</button>
+    </form>
+</div>
